@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Section WEB PAGE</title>
+</head>
+<body>
+
+    <header>
+        <h1>My Multi-Section HTML5 Web Page</h1>
+        <p>A demonstration of lists, tables, media, and forms using only native HTML5 features.</p>
+    </header>
+
+    <!-- Section 1: Lists -->
+    <section>
+        <h2>To-Do List</h2>
+        <ul>
+            <li>Finish HTML5 assignment</li>
+            <li>Review notes</li>
+            <li>Reviewn HTML5 form validation</li>
+        </ul>
+
+        <h3>Steps to Deploy Project</h3>
+        <ol>
+            <li>Validate HTML code</li>
+            <li>Upload files</li>
+            <li>Test on multiple devices</li>
+            <li>launch</li>
+        </ol>
+    </section>
+
+    <!-- Section 2: Table -->
+    <section>
+        <h2>Project Task Table</h2>
+        <table border="1" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Deadline</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Create HTML structure</td>
+                    <td>Aug 11</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>Add content and media</td>
+                    <td>Aug 16</td>
+                    <td>In Progress</td>
+                </tr>
+                <tr>
+                    <td>Final review and submission</td>
+                    <td>Aug 17</td>
+                    <td>Pending</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Section 3: Media -->
+    <section>
+        <h2>Project Media</h2>
+        <p>Here is a sample image and an audio file for demonstration:</p>
+        <figure>
+            <img src="html5 form image" alt="Project Image" width="400">
+            <figcaption>Figure 1: Placeholder project image</figcaption>
+        </figure>
+        <audio controls>
+            <source src="html5 form audio.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+    <!-- Section 4: HTML5 Form -->
+    <section>
+        <h2>Project Submission Form</h2>
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Enter your full name">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="name@example.com">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="10-digit number">
+            </fieldset>
+
+            <fieldset>
+                <legend>Project Details</legend>
+
+                <label for="project-title">Project Title:</label>
+                <input type="text" id="project-title" name="project-title" required minlength="5" placeholder="Enter project title">
+
+                <label for="project-type">Project Type:</label>
+                <select id="project-type" name="project-type" required>
+                    <option value="">--Select--</option>
+                    <option value="web">Web Development</option>
+                    <option value="app">Database</option>
+                    <option value="design">Python</option>
+                </select>
+
+                <label for="description">Project Description:</label>
+                <textarea id="description" name="description" rows="4" required minlength="20" placeholder="Describe your project"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <label>
+                    <input type="checkbox" name="subscribe" value="yes">
+                    Subscribe to updates
+                </label>
+
+                <p>Preferred Contact Method:</p>
+                <label><input type="radio" name="contact" value="email" required>Email</label>
+                <label><input type="radio" name="contact" value="phone">Phone</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>File Upload</legend>
+                <label for="file">Upload Supporting Document:</label>
+                <input type="file" id="file" name="file" accept=".pdf,.doc,.docx" required>
+            </fieldset>
+
+            <input type="submit" value="Submit Assignment">
+
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Amayo James HTML5 WEB Page</p>
+    </footer>
+
+</body>
+</html>
